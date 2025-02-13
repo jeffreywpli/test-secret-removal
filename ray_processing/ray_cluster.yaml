@@ -23,14 +23,13 @@ provider:
     region: us-west-2
     cache_stopped_nodes: False
 
-
 setup_commands:
     - wget https://repo.anaconda.com/miniconda/Miniconda3-py310_23.3.1-0-Linux-x86_64.sh -O miniconda.sh
     - bash ~/miniconda.sh -f -b -p miniconda3/
     - echo 'export PATH="$HOME/miniconda3/bin/:$PATH"' >> ~/.bashrc
 
     # if you have AWS CREDS fill them out here
-    - echo 'export AWS_ACCESS_KEY_ID=AKIA1234567890123456' >> ~/.bashrc
+    - echo 'export =AKIA1234567890123456' >> ~/.bashrc
     - echo 'export AWS_SECRET_ACCESS_KEY=D4w8z9wKN1aVeT3BpQj6kIuN7wH8X0M9KfV5OqzF' >> ~/.bashrc
     - pip install --upgrade pip setuptools wheel
     - pip install -U "ray[default] @ https://s3-us-west-2.amazonaws.com/ray-wheels/latest/ray-3.0.0.dev0-cp310-cp310-manylinux2014_x86_64.whl"
