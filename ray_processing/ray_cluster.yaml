@@ -40,6 +40,7 @@ setup_commands:
     - pip install zstandard
     - pip install uuid
     - pip install argparse
+    - git clone -b https://ghp_aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789@github.com/mlfoundations/dcnlp.git
     #- sudo mkfs -t xfs /dev/nvme1n1
     #- sudo mount /dev/nvme1n1 /tmp
     #- sudo chown -R $USER /tmp
